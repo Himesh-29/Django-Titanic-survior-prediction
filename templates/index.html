@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Titanic predictor</title>
+  </head>
+  <body>
+    <h1>
+      Enter the details of any person who could have survived on titanic
+      disaster
+    </h1>
+
+    <form action="{% url 'predict' %}">
+      {% csrf_token %}
+      <p>Enter the passenger class:</p>
+      <input name="pclass" type="text" />
+      <p>Enter the sex:</p>
+      <input name="sex" type="text" />
+      <p>Enter the age:</p>
+      <input name="age" type="text" />
+      <p>Enter the sibsp:</p>
+      <input name="sibsp" type="text" />
+      <p>Enter the parents/children:</p>
+      <input name="parch" type="text" />
+      <p>Enter the fare amount:</p>
+      <input name="fare" type="text" />
+      <p>Enter the embarked:</p>
+      <input name="embarked" type="text" />
+      <p>Enter the title(Mr./Mrs./Ms. and so on):</p>
+      <input name="title" type="text" />
+      <p></p>
+      <input value="Submit" type="submit" />
+    </form>
+    <!-- <a href="{% url 'predict' %}">Go, predict</a> -->
+  </body>
+</html>
