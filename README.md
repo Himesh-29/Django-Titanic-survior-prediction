@@ -1,11 +1,13 @@
 # Django-Titanic-survior-prediction
 
-### You can download this application and run in your own pc by writing:
-<code>python manage.py runserver</code>
+In this project, I have made a <b>full stack website</b> using Django which will predict whether a person would have survived the Titanic sinking or not.
+It basically present you with input fields where you can fill out the details of a person and the model 
 
-##### T&Cs:
-- You should have python installed on your system
-- You should have installed the Django library using
-  - <code>pip install django</code>
+Clone this repository using <code>git clone https://github.com/Himesh-29/Django-Titanic-survior-prediction.git</code><br/><br/>
+Install the requirements using
+```
+pip install -r requirements.txt
+```
+Launch the website on your localhost using <code>python manage.py runserver</code></li>
 
-### It basically present you with input fields where you can fill out the details of a person and the model will predict whether he would have survived the incident or not.
+
